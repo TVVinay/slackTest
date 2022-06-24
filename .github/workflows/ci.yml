@@ -11,3 +11,4 @@ jobs:
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         SLACK_MESSAGE: "This is test message"
+        MSG_MINIMAL: true
