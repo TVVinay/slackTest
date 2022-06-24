@@ -10,7 +10,7 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-        SLACK_MESSAGE: "This is test message"
+        SLACK_MESSAGE: ${{ github.run_number }}
         SLACK_TITLE	: "Report"
         SLACK_COLOR: ${{ job.status }}
         SLACK_MSG_AUTHOR: Test Automation Results
