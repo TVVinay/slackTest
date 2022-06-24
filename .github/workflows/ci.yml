@@ -11,4 +11,6 @@ jobs:
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         SLACK_MESSAGE: "This is test message"
-        MSG_MINIMAL: true
+        SLACK_TITLE	: "Query ai automation result"
+        SLACK_COLOR: ${{ job.status }}
+        SLACK_MSG_AUTHOR: $GITHUB_ACTOR
