@@ -14,3 +14,4 @@ jobs:
         SLACK_TITLE	: "Query ai automation result"
         SLACK_COLOR: ${{ job.status }}
         SLACK_MSG_AUTHOR: $GITHUB_ACTOR
+        SLACK_USERNAME: "Test"
